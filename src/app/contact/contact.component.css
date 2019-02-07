@@ -1,0 +1,28 @@
+.form-control {
+  width: 100%;
+
+}
+
+.form-group {
+  margin-left: 0rem;
+  margin-right: 40rem;
+}
+
+input{
+  padding: 12px 20px;
+}
+.add{
+  cursor: pointer;
+  border-radius: 5%;
+}
+.add:hover, .add:active {
+  background-color:aquamarine;
+}
+.del{
+  border: 1px solid #f44336;
+  border-radius: 10%;
+}
+.del:hover, .del:active {
+  background-color:red;
+
+}

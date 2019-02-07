@@ -1,0 +1,38 @@
+<div class='container' >
+  <form (submit)='addContact()'>
+
+    <div class='form-group'>
+
+        <label>First Name</label><br/>
+        <input type='text' [(ngModel)]='first_name' name='firstname' class = 'form-control' required=true>
+        <br/>
+
+        <label>Last Name</label><br/>
+        <input type='text' [(ngModel)]='last_name' name='lastname' class = 'form-control' required>
+        <br/>
+
+        <label>Email</label><br/>
+        <input type='text' [(ngModel)]='email' name='email' class = 'form-control' required>
+        <br/>
+
+        <input class='add' type='submit' value='Add yourself'>
+
+    </div>
+
+  </form>
+</div><hr/>
+
+<div class="container">
+
+  <div *ngFor='let contact of contacts'>
+
+    <div class='col-md-3'>
+      {{contact.first_name}}
+      {{contact.last_name}}
+      {{contact.email}}
+      <input type='button' (click) = 'deleteContact(contact._id)' value='Delete' class='del'>
+    </div>
+
+  </div>
+
+</div>
